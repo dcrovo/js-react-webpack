@@ -1,12 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import './styles/global.scss'
 
-//React 18
-import React from"react";
-import {
-  createRoot
-} from"react-dom";
-import App from'./components/App';
-import'./styles/global.scss';
+ReactDOM.render(<App/>, document.getElementById('app'));
 
-const container = document.getElementById('app');
-const root = createRoot(container);
-root.render( < App / > );
